@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Apis.Auth" Version="1.57.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="3.1.24"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.22.0"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.5"/>
+        <PackageReference Include="StringToExpression" Version="1.1.1"/>
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.22.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Stock.Application\Stock.Application.csproj"/>
+    </ItemGroup>
+
+</Project>
