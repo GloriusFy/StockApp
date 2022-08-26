@@ -38,7 +38,7 @@ public abstract class RepositoryBase<TEntity> : IRepository<TEntity> where TEnti
         => _set.AddRange(entities);
 
     public virtual void Remove(TEntity entity)
-        => _set.AddRange(entity);
+        => _set.Remove(entity);
 
     public abstract void RemoveRange(IEnumerable<TEntity> entitiesToDelete);
 
